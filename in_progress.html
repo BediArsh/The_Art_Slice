@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+                font-family: 'poppins', sans-serif;
+
+            }
+        .image{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url("https://www.pictureframesexpress.co.uk/blog/wp-content/uploads/2020/05/7-Tips-to-Finding-Art-Inspiration-Header-1024x649.jpg");
+            background-size: cover; 
+            height: 100vh;
+            width: 100%;
+            background-position: center;
+            position: relative;
+        }
+        .text-box{
+            color:#fff;
+            position:absolute;
+            bottom:40%;
+        }
+        .text-box h1{
+            font-size:120px;
+            line-height: 130px;
+            margin-left:290px;
+            color: transparent;
+            -webkit-text-stroke: 1px #fff;
+            background: url("back.png");
+            -webkit-background-clip: text;
+            background-position: 0 0;
+            animation:back 20s linear infinite;
+            text-align:center;
+        }
+            @keyframes back{
+                100%{
+            background-position: 2000px 0;   
+             }
+        }
+            .button{
+                background:transparent; /* Green */
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                border: 4px solid white;
+                
+                }
+
+                    .button:hover {
+                    background-color: #555555;
+                    color: white;
+                    }
+              
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+    <div class="image" >
+      <a href="index.html" class="button" >HOME</a>
+    </div>
+    <div class="text-box"><h1>...IN MOTION...</h1><br><br>
+    </div>
+
+</body>
+</html>
