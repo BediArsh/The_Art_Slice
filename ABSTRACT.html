@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <TITLE>ABSTRACT ART</TITLE>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<style>
+.nav{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 5px 0;
+}
+
+nav ul{
+	  flex:1;
+	  text-align:right;
+	  padding: 25px 25px 25px 25px;
+}
+nav ul li{
+	 display: inline-block;
+	 list-style:none;
+	 margin: 1px 20px;
+}
+nav ul li a{
+	  text-decoration:none;
+	  position:relative;
+}
+
+nav ul li a:hover::after{
+      width:50%;
+      background-color: lightgrey;
+	  
+}
+.button{
+   
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding:10px 25px;
+    background: transparent;
+    border: 4px solid black;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: grey;
+    opacity: 1;
+    color:white;
+}
+
+                                           /*picture styling starts*/
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-text p{
+    margin: auto;
+    font-size: 30px;
+    color: whitesmoke;
+    font-weight: bold;
+    position:relative;
+    z-index: 1;
+    display: inline-block;
+    background-color: #009688;
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 30px;
+    border: 3px solid black;
+}
+
+#service{
+    width:100%;
+    padding: 70px 0;
+    background-image:linear-gradient( lightyellow, white , lightyellow,white , lightyellow,white , lightyellow)
+}
+
+
+.service-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+
+}
+.single-service{
+    flex-basis: 300px;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+.single-service img{
+    width: 300px;
+    height: 250px;
+    border-radius: 7px;
+}
+.overlay{
+    width:300px;
+    height:250px;
+    position: absolute;
+    top:0;
+    
+    border-radius: 7px;
+    cursor: pointer;
+  background: linear-gradient(rgba(0,0,0,0.5),hotpink);
+    opacity: 0;
+    transition: 1s;
+
+}
+.single-service:hover .overlay{
+    opacity: 1;
+}
+.service-desc{
+    width:80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity:0;
+    transform: translateX(-50%);
+    transition: 1s;
+
+
+}
+hr{
+    background:#fff;
+    height: 2px;
+    border:0;
+    margin: 15px auto;
+    width: 60%;
+
+}
+.service-desc h3{
+    font-size: 22px;
+    font-family:'Work Sans', sans-serif;
+
+}
+
+.service-desc p{
+    font-size: 15px;
+    font-family:'Work Sans', sans-serif;
+
+}
+.single-service:hover .service-desc{
+    bottom:20%;
+    opacity: 1;
+}
+
+ /*FOOTER STARTS HERE*/
+
+
+ body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container_op{
+    max-width: 1170;
+    margin:auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none; 
+}
+.footer{
+    background-color: #009688;  
+    padding: 20px 160px 20px 160px;
+    
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+   
+}
+.footer-col h4{
+    font-size: 22px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 700;
+    position: relative;
+    font-family:  'Teko', sans-serif;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px; 
+    background-color: hotpink;
+    height: 2px;
+    box-sizing: border-box;
+    width:50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    color: floralwhite;
+    display: block;
+    transition: all 0.3s ease;
+    font-family:'Lobster', serif;
+}
+.footer-col ul li a:hover{
+    color: black;
+    padding-left: 10px;
+} 
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width:40px;
+    background-color: rgba(255,255,255,0.2);
+    margin-right:0 10px 10px 0px; 
+    text-align:center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}  
+.footer-col .social-links a:hover{
+    color: lightgreen;
+    background-color: black;
+}
+/*responsive*/
+@media(max-width: 767px){
+    .footer-col {
+        width: 25%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 767px){
+    .footer-col {
+        width: 25%
+    }
+}
+.fas {
+    font-size:40px;
+    margin: 10px 40px;
+    border-radius: 8px;
+    color: black;
+    
+}
+
+
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #009688;">
+                              <!--HEADER STARTS-->
+    <div class="container">
+        <nav>
+             <ul>
+                <li><a href="/"><i class="fas fa-home"></i></a></li>
+                 <li><a href="ABOUT_US.html" class="button">ABOUT</a></li>
+                <li><a href="CONTACT_US.html" class="button">CONTACT</a></li>
+                <li><a href="" class="button">REVIEWS</a></li>
+                <li><a href="login.html" class="button">LOGIN</a></li>
+            </ul>
+             </ul>
+             </nav>   
+             </div> 
+                                <!--HEADER ENDS-->
+
+                                 <!--PICTURES STARTS-->
+                                 <section id ="service">
+                                    <div class="title-text">
+                                        <p>ATTRACTIVE-IMPRESSIVE ART-WORK</p>
+                                    </div>
+                                    <div class="service-box">
+                                        <div class="single-service">
+                                            <img src="https://www.indianartzone.com/pub/media/catalog/product/0/1/01a_1.jpg">
+                                            <div class="overlay"></div>
+                                            <div class="service-desc">
+                                                <h3>COST - $73.00</h3>
+                                                <hr>
+                                                    <p>MADE BY KENN NORMAN.</p>
+                                                    <br>
+                                                     <a href="atm.html" class="button" style="text-decoration: none;font-size: 16px;width:10%;color:white;border-color: white;
+                                                     ">BUY NOW</a>
+                                            
+                                            </div>
+                                        </div>
+
+                                        <div class="single-service">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO3qyn-DYZGv6RPEzcSezoLIieipiOYEO405QqO9b70d2VppW4COcRSEIhcW0oohqx6xo&usqp=CAU">
+                                            <div class="overlay"></div>
+                                            <div class="service-desc">
+                                                <h3>COST - $91.00</h3>
+                                                <hr>
+                                                    <p>MADE BY KENN NORMAN.
+                                                        </p>
+                                                        <br>
+                                                     <a href="atm.html" class="button" style="text-decoration: none;font-size: 16px;width:10%;color:white;border-color: white;
+                                                     ">BUY NOW</a>
+                                            
+                                            </div>
+                                        </div>
+
+                                        <div class="single-service">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrKmVEFwmwBa_bm9SF6PhI9w1xWX_qBxVM_OfBJDKjQpMrQYunQzYlLeeXNcOG3FMJOsk&usqp=CAU">
+                                            <div class="overlay"></div>
+                                            <div class="service-desc">
+                                                <h3>COST - $65.00</h3>
+                                                <hr>
+                                                    <p>MADE BY KENN NORMAN.</p>
+                                                    <br>
+                                                     <a href="atm.html" class="button" style="text-decoration: none;font-size: 16px;width:10%;color:white;border-color: white;
+                                                     ">BUY NOW</a>
+                                            
+                                            </div>
+                                        </div>
+
+                                        <div class="single-service">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUmtM5IVASsR7CpKS1_sSCpIwmcft5bCFZSQ&usqp=CAU">
+                                            <div class="overlay"></div>
+                                            <div class="service-desc">
+                                                <h3>COST - $49.00</h3>
+                                                <hr>
+                                                    <p>MADE BY KENN NORMAN.</p>
+                                                    <br>
+                                                     <a href="atm.html" class="button" style="text-decoration: none;font-size: 16px;width:10%;color:white;border-color: white;
+                                                     ">BUY NOW</a>
+                                            
+                                            </div>
+                                        </div>
+
+                                        <div class="single-service">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuK0L7oe8ivg2LTEuSQm3sMllyZTLgHX7usNPIHeRRjdWuDAxw6bPC7WCNJd15K8x8uRA&usqp=CAU">
+                                            <div class="overlay"></div>
+                                            <div class="service-desc">
+                                                <h3>COST - $65.00</h3>
+                                                <hr>
+                                                    <p>MADE BY KENN NORMAN.</p>
+                                                    <br>
+                                                     <a href="atm.html" class="button" style="text-decoration: none;font-size: 16px;width:10%;color:white;border-color: white;
+                                                     ">BUY NOW</a>
+                                            
+                                            </div>
+                                        </div>
+
+                                        <div class="single-service">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNFQb06OMko8j3Q8CaVsxEIRsEho8qaIcaBw&usqp=CAU">
+                                            <div class="overlay"></div>
+                                            <div class="service-desc">
+                                                <h3>COST - $65.00</h3>
+                                                <hr>
+                                                    <p>MADE BY KENN NORMAN.</p>
+                                                    <br>
+                                                     <a href="atm.html" class="button" style="text-decoration: none;font-size: 16px;width:10%;color:white;border-color: white;
+                                                     ">BUY NOW</a>
+                                            
+                                            </div>
+                                        </div>
+
+                                        <div class="single-service">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0lWo_v25xUHvplUgxkeLYJAo5ePTRFPwREA&usqp=CAU">
+                                            <div class="overlay"></div>
+                                            <div class="service-desc">
+                                                <h3>COST - $99.00</h3>
+                                                <hr>
+                                                    <p>MADE BY KENN NORMAN.</p>
+                                                    <br>
+                                                     <a href="atm.html" class="button" style="text-decoration: none;font-size: 16px;width:10%;color:white;border-color: white;
+                                                     ">ABUY NOW</a>
+                                            
+                                            </div>
+                                        </div>
+
+                                        <div class="single-service">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRci_isClLgQ36zW1mCm72nDHiiN_2BfCBcjQ&usqp=CAU">
+                                            <div class="overlay"></div>
+                                            <div class="service-desc">
+                                                <h3>COST - $65.00</h3>
+                                                <hr>
+                                                    <p>MADE BY KENN NORMAN.</p>
+                                                    <br>
+                                                     <a href="atm.html" class="button" style="text-decoration: none;font-size: 16px;width:10%;color:white;border-color: white;
+                                                     ">BUY NOW</a>
+                                            
+                                            </div>
+                                        </div>
+
+                                        <div class="single-service">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKAKZkKzCCDxzzAaVWd_-FvXUTS3zk6MFver4iJ9hJ_CwJLKQHOUzb9iQCdw-A_aZApfM&usqp=CAU">
+                                            <div class="overlay"></div>
+                                            <div class="service-desc">
+                                                <h3>COST - $65.00</h3>
+                                                <hr>
+                                                    <p>MADE BY KENN NORMAN.</p>
+                                                    <br>
+                                                     <a href="atm.html" class="button" style="text-decoration: none;font-size: 16px;width:10%;color:white;border-color: white;
+                                                     ">BUY NOW</a>
+                                            
+                                            </div>
+                                        </div>
+
+                            
+
+                                        <div class="single-service">
+                                            <img src="https://images.squarespace-cdn.com/content/v1/577e85abc534a5d5bcf943d2/1472153295177-V1KDZO8NHJK9ONFEOL5B/Lake+Hickory+1+09-41.jpg">
+                                            <div class="overlay"></div>
+                                            <div class="service-desc">
+                                                <h3>COST - $65.00</h3>
+                                                <hr>
+                                                    <p>MADE BY KENN NORMAN.</p>
+                                                    <br>
+                                                     <a href="atm.html" class="button" style="text-decoration: none;font-size: 16px;width:10%;color:white;border-color: white;
+                                                     ">BUY NOW</a>
+                                            
+                                            </div>
+                                        </div>
+
+                                         <div class="single-service">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsB3GExQfveE8fL-k9gamnIjaPBwkbnECeRA&usqp=CAU">
+                                            <div class="overlay"></div>
+                                            <div class="service-desc">
+                                                <h3>COST - $65.00</h3>
+                                                <hr>
+                                                    <p>MADE BY KENN NORMAN.</p>
+                                                    <br>
+                                                     <a href="atm.html" class="button" style="text-decoration: none;font-size: 16px;width:10%;color:white;border-color: white;
+                                                     ">BUY NOW</a>
+                                            
+                                            </div>
+                                        </div>
+
+                                        <div class="single-service">
+                                            <img src="https://images.squarespace-cdn.com/content/v1/533ef944e4b0cccdfc39f46a/1604421309442-XI8JSQA9UK3M1AG1KPPD/Art+Gallery+Naples+FL%2C+Local+Artist+Tim+Parker%2C+Modern+Art+Southwest+Florida%2C+Abstract+Art+Naples+FL%2C+Abstracts%2CLarge+Canvas+Art%2C+Coastal+Decor%2C+Large+Wall+Art%2C+Extra+Large+Wall+Art%2C+Abstract+Art+Print%2C+Beach+Wall+Art%2C+Coastal+Wall+D.jpg?format=750w">
+                                            <div class="overlay"></div>
+                                            <div class="service-desc">
+                                                <h3>COST - $65.00</h3>
+                                                <hr>
+                                                    <p>MADE BY KENN NORMAN.</p>
+                                                    <br>
+                                                     <a href="atm.html" class="button" style="text-decoration: none;font-size: 16px;width:10%;color:white;border-color: white;
+                                                     ">BUY NOW</a>
+                                            
+                                            </div>
+                                        </div>
+
+                                    </section>
+                                 <!--PICTURE ENDS-->
+
+                                    <!--FOOTER START-->
+<!--FOOTER STARTS HERE-->
+
+<!--FOOTER STARTS HERE-->
+
+<footer class="footer">
+    <div class="container_op">
+        <hr>
+        <div class="row">
+            <div class="footer-col">
+                <h4>THE ART SLICE</h4>
+                
+                <ul>
+                    <li><a href="in_progress.html">PRIVACY POLICY</a></li>
+                    <li><a href="in_progress.html">AFFILIATE PROGRAM</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>GET HELP</h4>
+                <ul>
+                    <li><a href="in_progress.html">FAQ</a></li>
+                    <li><a href="in_progress.html">SHIPPING</a></li>
+                    <li><a href="in_progress.html">RETURNS</a></li>
+                    <li><a href="in_progress.html">ORDER STATUS</a></li>
+                    <li><a href="in_progress.html">PAYMENT OPTIONS</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>ONLINE SHOP</h4>
+                <ul>
+                    <li><a href="ABSTRACT.html">ABSTRACT </a></li>
+                    <li><a href="ACRYLIC.html">ACRYLIC</a></li>
+                    <li><a href="B and D.html">BLACK AND WHITE</a></li>
+                    <li><a href="CREATIVE.html">CREATIVE</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>FOLLOW US</h4>
+                <div class="social-links">
+                    <ul>
+                    <li><a href="in_progress.html"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="in_progress.html"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.google.co.in/"><i class="fab fa-google-plus"></i></a></li>
+                    <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="in_progress.html"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <br>
+
+
+        <h2 style="font-size:40px; text-align:center; text-decoration:none; color: black; font-family: Audiowide, sans-serif;">FIND ART YOU LOVE.</h2><br>
+        <p style="font-size: 16px; text-decoration: none; text-align:center; color:#fff ; font-family: 'Playfair Display', serif;">“At this Art gallery, we make it our mission to help you discover and buy from the best emerging artists around the world. Whether you’re looking to discover a new artist, add a statement piece to your home, or commemorate an important life event, THE ART SLICE is your portal to thousands of original works by today’s top artists.”</p><br>
+        <img style="display: block; border-radius:20px; width:120px;flex-basis: 50%; margin:auto;  " src="logo.png.png"><hr>
+
+
+
+                                <!--FOOTER ENDS-->
+</body>
+</html>
